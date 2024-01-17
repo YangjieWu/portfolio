@@ -35,7 +35,7 @@ with col1:
     st.markdown("###### 📍 Location: Osaka, JP")
     st.markdown("###### 🏄 Interest: Full Stack, Data Science, Product Management")
     st.markdown("###### 🟡 Favorite Color: Organge")
-    st.markdown("###### 👀 Linkedin: https://www.linkedin.com/in/yangjiewu/")
+    st.markdown("###### 👀 Linkedin: ")
     
     #st.divider()
     with open("src/CV_YangjieWu_20231208.pdf", "rb") as file:
