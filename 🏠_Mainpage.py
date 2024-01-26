@@ -51,8 +51,8 @@ with col2:
 
 # Add space between col1 and col2
 for _ in range(4):
-    col1.empty()
-col1.markdown("---")
+    col2.empty()
+col2.markdown("|")
         
 # with col3:
 #     st.image("src/portrait.jpeg", width=360)
