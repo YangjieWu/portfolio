@@ -16,11 +16,6 @@ st.header("About Me",divider='rainbow')
 
 col1, col2 = st.columns([1.3 , 1.3])
 
-# Add space between col1 and col2
-col1.empty()
-# Add a separator between col1 and col2
-col1.markdown("---")
-
 with col1:
     st.write(
     ' Hello everyone!\
@@ -53,6 +48,11 @@ with col2:
         data=pdf_file,
         file_name="resume",
         mime="application/pdf")
+
+# Add space between col1 and col2
+for _ in range(4):
+    col1.empty()
+col1.markdown("---")
         
 # with col3:
 #     st.image("src/portrait.jpeg", width=360)
