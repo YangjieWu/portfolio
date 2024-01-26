@@ -14,7 +14,7 @@ st.sidebar.success("Select a page above.")
 #main page
 st.header("About Me",divider='rainbow')
 
-col1, col2, col3 = st.columns([1.3 ,0.2, 1])
+col1, col2 = st.columns([1.3 ,0.2, 1])
 
 with col1:
     st.write(
@@ -29,6 +29,8 @@ with col1:
     +
     '**I believe the First Principle Theory **'
     )
+
+with col2:
     st.markdown("###### 😄 Nick Name: William!")
     st.markdown("###### 👉 Study: UBC")
     # st.markdown("#### 🇨🇳 Nationality: Chinese")
@@ -46,9 +48,9 @@ with col1:
         data=pdf_file,
         file_name="resume",
         mime="application/pdf")
-
-with col3:
-    st.image("src/portrait.jpeg", width=360)
+        
+# with col3:
+#     st.image("src/portrait.jpeg", width=360)
 
 st.subheader("My :blue[skills] ⚒️",divider='rainbow') #,divider='rainbow'
 
