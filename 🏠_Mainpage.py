@@ -14,7 +14,7 @@ st.sidebar.success("Select a page above.")
 #main page
 st.header("About Me",divider='rainbow')
 
-col1, col2 = st.columns([1.3 ,0.2, 1])
+col1, col2 = st.columns([1.3 , 1.3])
 
 with col1:
     st.write(
