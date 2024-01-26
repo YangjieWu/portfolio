@@ -14,7 +14,8 @@ st.sidebar.success("Select a page above.")
 #main page
 st.header("About Me",divider='rainbow')
 
-col1, col2 = st.columns([1.3 , 1.3])
+# col1, col2 = st.columns([1.3 , 1.3])
+col1, col2 = st.columns(2, gap="medium")
 
 with col1:
     st.write(
@@ -48,11 +49,6 @@ with col2:
         data=pdf_file,
         file_name="resume",
         mime="application/pdf")
-
-# Add space between col1 and col2
-for _ in range(4):
-    col2.empty()
-col2.markdown("|")
         
 # with col3:
 #     st.image("src/portrait.jpeg", width=360)
